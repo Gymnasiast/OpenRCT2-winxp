@@ -61,15 +61,16 @@ diff --git a/src/openrct2-ui/UiContext.Win32.cpp b/src/openrct2-ui/UiContext.Win
 index 90156d9..aa5b873 100644
 --- a/src/openrct2-ui/UiContext.Win32.cpp
 +++ b/src/openrct2-ui/UiContext.Win32.cpp
-@@ -13,6 +13,7 @@
+@@ -13,6 +13,8 @@
  // clang-format off
  #    include <windows.h>
  #    include <shellapi.h>
 +#    include <shlobj.h>
++#    include <commdlg.h>
  // clang-format on
  #    undef CreateWindow
  
-@@ -126,6 +127,43 @@ namespace OpenRCT2::Ui
+@@ -126,6 +128,43 @@ namespace OpenRCT2::Ui
          std::string ShowFileDialogInternal(SDL_Window* window, const FileDialogDesc& desc, bool isFolder)
          {
              std::string resultFilename;
