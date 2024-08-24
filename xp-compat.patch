@@ -272,7 +272,7 @@ index 96c3c56..1acd3aa 100644
  
 +#define swprintf_s swprintf
 +
- namespace Platform
+ namespace OpenRCT2::Platform
  {
      static std::string WIN32_GetKnownFolderPath(REFKNOWNFOLDERID rfid);
 @@ -662,10 +663,14 @@ namespace Platform
